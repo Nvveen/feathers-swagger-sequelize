@@ -1,0 +1,12 @@
+{
+  "name": "feathers-swagger-sequelize",
+  "version": "0.0.1",
+  "description": "Autogenerate swagger documentation from sequelize anotations",
+  "main": "lib/index.js",
+  "repository": "https://github.com/Nvveen/feathers-swagger-sequelize",
+  "author": "Neal van Veen",
+  "license": "FreeBSD",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
