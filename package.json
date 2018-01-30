@@ -24,6 +24,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
+    "chai-things": "^0.2.0",
     "eslint": "^4.16.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-standard": "^11.0.0-beta.0",
@@ -46,8 +47,15 @@
       "node": true,
       "mocha": true
     },
-    "extends": ["standard", "prettier", "prettier/standard"],
-    "plugins": ["prettier", "standard"],
+    "extends": [
+      "standard",
+      "prettier",
+      "prettier/standard"
+    ],
+    "plugins": [
+      "prettier",
+      "standard"
+    ],
     "rules": {
       "prettier/prettier": [
         "error",
@@ -60,6 +68,8 @@
     "parser": "babel-eslint"
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   }
 }
