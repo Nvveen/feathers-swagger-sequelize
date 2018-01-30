@@ -9,7 +9,51 @@
   "dependencies": {
     "lodash": "^4.17.4"
   },
+  "engine": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "test": "mocha __tests__  --recursive --require babel-register",
+    "test:watch": "nodemon -w lib/ --exec babel-node lib/"
+  },
   "devDependencies": {
-    "eslint": "^4.16.0"
+    "@feathersjs/express": "^1.1.2",
+    "@feathersjs/feathers": "^3.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "feathers-sequelize": "^3.0.0",
+    "feathers-swagger": "^0.6.0",
+    "mocha": "^5.0.0",
+    "nodemon": "^1.14.11",
+    "sqlite3": "^3.1.13"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "extends": ["standard", "prettier", "prettier/standard"],
+    "plugins": ["prettier", "standard"],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "semi": false
+        }
+      ]
+    },
+    "parser": "babel-eslint"
+  },
+  "babel": {
+    "presets": ["env"]
   }
 }
