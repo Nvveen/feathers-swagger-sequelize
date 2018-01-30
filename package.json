@@ -2,19 +2,27 @@
   "name": "feathers-swagger-sequelize",
   "version": "0.0.1",
   "description": "Autogenerate swagger documentation from sequelize anotations",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/Nvveen/feathers-swagger-sequelize",
-  "author": "Neal van Veen",
-  "license": "FreeBSD",
+  "author": {
+    "name": "Neal van Veen",
+    "email": "nealvanveen@gmail.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.4"
+  },
+  "bugs": {
+    "url": "https://github.com/Nvveen/feathers-swagger-sequelize/issues"
   },
   "engine": {
     "node": ">= 6"
   },
   "scripts": {
     "test": "mocha __tests__/  --recursive --require babel-register",
-    "test:watch": "nodemon -w lib/ -w __tests__/ --exec npm run test"
+    "test:watch": "nodemon -w lib/ -w __tests__/ --exec npm run test",
+    "build": "babel -d dist/ lib/",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@feathersjs/express": "^1.1.2",
@@ -47,15 +55,8 @@
       "node": true,
       "mocha": true
     },
-    "extends": [
-      "standard",
-      "prettier",
-      "prettier/standard"
-    ],
-    "plugins": [
-      "prettier",
-      "standard"
-    ],
+    "extends": ["standard", "prettier", "prettier/standard"],
+    "plugins": ["prettier", "standard"],
     "rules": {
       "prettier/prettier": [
         "error",
@@ -68,8 +69,6 @@
     "parser": "babel-eslint"
   },
   "babel": {
-    "presets": [
-      "env"
-    ]
+    "presets": ["env"]
   }
 }
