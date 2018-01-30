@@ -1,6 +1,7 @@
 # feathers-swagger-sequelize
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/Nvveen/feathers-swagger-sequelize.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/Nvveen/feathers-swagger-sequelize.svg?branch=master)](https://travis-ci.org/Nvveen/feathers-swagger-sequelize)
 
 > Use `feathers-swagger` and `(feathers-)sequelize` to add documentation from the models
 > directly to Swagger
