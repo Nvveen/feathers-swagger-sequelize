@@ -8,5 +8,8 @@
   "license": "FreeBSD",
   "dependencies": {
     "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0"
   }
 }
