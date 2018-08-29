@@ -22,7 +22,7 @@ import express from '@feathersjs/express'
 import service from 'feathers-sequelize'
 import swagger from 'feathers-swagger'
 import Sequelize from 'sequelize'
-import generateSwagger from 'feathers-sequlize-swagger'
+import generateSwagger from 'feathers-swagger-sequelize'
 
 const sequelize = new Sequelize('null', 'null', 'null', {
   storage: ':memory:',
