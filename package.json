@@ -41,7 +41,7 @@
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "feathers-sequelize": "^3.0.0",
+    "feathers-sequelize": "^5.0.1",
     "feathers-swagger": "^0.6.0",
     "isomorphic-fetch": "^2.2.1",
     "mocha": "^5.0.0",
