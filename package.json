@@ -26,7 +26,8 @@
     "test": "mocha __tests__/  --recursive --require babel-register",
     "test:watch": "nodemon -w lib/ -w __tests__/ --exec npm run test",
     "build": "babel -d dist/ lib/",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "@feathersjs/express": "^1.1.2",
