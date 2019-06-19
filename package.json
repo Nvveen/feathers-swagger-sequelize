@@ -14,7 +14,8 @@
     "sqlite3": "^4.0.6"
   },
   "files": [
-    "lib/*" 
+	"lib/*",
+	"dist/*"
   ],
   "bugs": {
     "url": "https://github.com/Nvveen/feathers-swagger-sequelize/issues"
