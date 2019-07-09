@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.12"
   },
   "bugs": {
     "url": "https://github.com/Nvveen/feathers-swagger-sequelize/issues"
