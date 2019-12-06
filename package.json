@@ -25,7 +25,7 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "@feathersjs/express": "^1.1.2",
+    "@feathersjs/express": "^4.4.3",
     "@feathersjs/feathers": "^3.1.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
